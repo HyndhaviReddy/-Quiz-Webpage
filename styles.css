@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  border-radius: 8px;
+}
+
+#category-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#category-selection button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid lavender;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  transition: background-color 0.3s;
+}
+
+#category-selection button:hover {
+  background-color: yellow;
+}
+
+#quiz-container {
+  text-align: center;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options label {
+  margin: 5px 0;
+}
+
+.options button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.option {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #333; /* Text color */
+  transition: color 0.3s;
+}
+
+.option:hover {
+  color: #ce1717; /* Hover text color */
+}
+
+#result {
+  margin-top: 20px;
+}

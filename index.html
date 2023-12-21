@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<body style="background-image: url('background.png');">
+<div class="container">
+  <h1>Quiz Time</h1>
+  <div id="quiz-container">
+    <div id="category-selection">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="general">General Knowledge</option>
+        <option value="science">Science</option>
+        <option value="technology">Technology</option>
+        <option value="art">Art</option>
+      </select>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-questions" style="display: none;">
+      <div class="question"></div>
+      <div class="options" onclick="checkAnswer(event)"></div>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2>Quiz Completed!</h2>
+      <p>Your Score: <span id="score">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
